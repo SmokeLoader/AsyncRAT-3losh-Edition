@@ -2,6 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
+using System.Diagnostics;
 
 namespace License_Generation
 {
@@ -14,6 +15,8 @@ namespace License_Generation
 
         private void GenerateButton_Click(object sender, RoutedEventArgs e)
         {
+            // I kindly ask you to not remove the following line:
+            Process.Start("https://t.me/strikelab");
             LicenseKeyTextBox.Text = BinGen(UserIdTextBox.Text);
         }
 
